@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T3 Coupé</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        background: #f6f3ef;
+        color: #1f1f1f;
+      }
+
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 3rem;
+      }
+
+      h1,
+      h2 {
+        color: #8f1d21;
+      }
+
+      .hero {
+        background: #fff;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .hero svg {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 1rem;
+        border-radius: 12px;
+      }
+
+      .details,
+      .attendees {
+        background: #fff;
+        border-radius: 16px;
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 0.5rem 1rem;
+        margin: 0;
+      }
+
+      dt {
+        font-weight: 700;
+      }
+
+      .attendee-groups {
+        display: grid;
+        gap: 1rem;
+      }
+
+      ul {
+        margin: 0.5rem 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1>T3 Coupé</h1>
+        <p>Jízda historickou tramvají T3 Coupé.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="tram-title tram-desc" focusable="false">
+          <title id="tram-title">Ilustrace tramvaje T3 Coupé</title>
+          <desc id="tram-desc">Stylizovaná historická tramvaj T3 Coupé v červeno-krémových barvách jako hlavní vizuál této stránky.</desc>
+          <rect width="800" height="420" fill="#e7eef7" />
+          <rect y="300" width="800" height="120" fill="#868686" />
+          <rect y="328" width="800" height="14" fill="#5c5c5c" />
+          <rect x="70" y="120" width="620" height="160" rx="26" fill="#b12228" />
+          <rect x="110" y="90" width="500" height="50" rx="18" fill="#f3dfbf" />
+          <rect x="125" y="138" width="130" height="82" rx="10" fill="#f2f6fb" />
+          <rect x="275" y="138" width="130" height="82" rx="10" fill="#f2f6fb" />
+          <rect x="425" y="138" width="130" height="82" rx="10" fill="#f2f6fb" />
+          <rect x="575" y="138" width="80" height="82" rx="10" fill="#f2f6fb" />
+          <rect x="560" y="125" width="68" height="140" rx="14" fill="#f3dfbf" />
+          <rect x="82" y="240" width="596" height="22" rx="8" fill="#6d1216" />
+          <circle cx="190" cy="304" r="42" fill="#262626" />
+          <circle cx="190" cy="304" r="18" fill="#d9d9d9" />
+          <circle cx="560" cy="304" r="42" fill="#262626" />
+          <circle cx="560" cy="304" r="18" fill="#d9d9d9" />
+          <line x1="190" y1="304" x2="560" y2="304" stroke="#3c3c3c" stroke-width="8" />
+          <line x1="345" y1="90" x2="345" y2="44" stroke="#444" stroke-width="8" />
+          <line x1="345" y1="44" x2="405" y2="22" stroke="#444" stroke-width="8" />
+        </svg>
+      </section>
+
+      <section class="details">
+        <h2>Informace</h2>
+        <dl>
+          <dt>Datum</dt>
+          <dd><time datetime="2026-10-11">11. 10. 2026</time></dd>
+          <dt>Čas</dt>
+          <dd>od <time datetime="2026-10-11T13:15:00+02:00">13:15 SELČ</time> (Praha)</dd>
+        </dl>
+      </section>
+
+      <section class="attendees">
+        <h2>Účastníci</h2>
+        <div class="attendee-groups">
+          <div>
+            <h3>Určitě dorazí</h3>
+            <ul>
+              <li>Zatím nikdo potvrzený</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Možná dorazí</h3>
+            <ul>
+              <li>Zatím nikdo nepotvrdil možnost účasti</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
